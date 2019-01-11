@@ -1,0 +1,343 @@
+[
+    {
+        "id": "f11341b1.b75c7",
+        "type": "tab",
+        "label": "MyLeo",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "287cc857.b11498",
+        "type": "mqtt in",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/init",
+        "qos": "2",
+        "broker": "a4ee4675.4df528",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            [
+                "ea890476.318638"
+            ]
+        ]
+    },
+    {
+        "id": "5575d11a.44017",
+        "type": "mqtt in",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/relay1Status",
+        "qos": "2",
+        "broker": "a4ee4675.4df528",
+        "x": 490,
+        "y": 160,
+        "wires": [
+            [
+                "ab869b95.6cf908"
+            ]
+        ]
+    },
+    {
+        "id": "ea890476.318638",
+        "type": "debug",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 530,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "ab869b95.6cf908",
+        "type": "debug",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 730,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b209d16f.5c4d8",
+        "type": "mqtt out",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/relay/1",
+        "qos": "",
+        "retain": "",
+        "broker": "a4ee4675.4df528",
+        "x": 290,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "f822ca58.205e18",
+        "type": "inject",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "",
+        "payload": "Relay1",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 160,
+        "wires": [
+            [
+                "b209d16f.5c4d8"
+            ]
+        ]
+    },
+    {
+        "id": "e33a3ab5.690868",
+        "type": "mqtt out",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/relay/2",
+        "qos": "",
+        "retain": "",
+        "broker": "a4ee4675.4df528",
+        "x": 290,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "9d5480ca.40997",
+        "type": "inject",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "",
+        "payload": "Relay2",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "e33a3ab5.690868"
+            ]
+        ]
+    },
+    {
+        "id": "ea150d9d.acdad",
+        "type": "mqtt out",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/relay/3",
+        "qos": "",
+        "retain": "",
+        "broker": "a4ee4675.4df528",
+        "x": 290,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "68d3ae57.7506",
+        "type": "inject",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "",
+        "payload": "Relay3",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "ea150d9d.acdad"
+            ]
+        ]
+    },
+    {
+        "id": "a027a7bd.fb9158",
+        "type": "mqtt out",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/relay/4",
+        "qos": "",
+        "retain": "",
+        "broker": "a4ee4675.4df528",
+        "x": 290,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e19025d1.1fff48",
+        "type": "inject",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "",
+        "payload": "Relay4",
+        "payloadType": "str",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 110,
+        "y": 340,
+        "wires": [
+            [
+                "a027a7bd.fb9158"
+            ]
+        ]
+    },
+    {
+        "id": "2052158b.d588fa",
+        "type": "mqtt in",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/relay2Status",
+        "qos": "2",
+        "broker": "a4ee4675.4df528",
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "67ba5dec.044944"
+            ]
+        ]
+    },
+    {
+        "id": "67ba5dec.044944",
+        "type": "debug",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 730,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "7b5e721b.587e7c",
+        "type": "mqtt in",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/relay3Status",
+        "qos": "2",
+        "broker": "a4ee4675.4df528",
+        "x": 490,
+        "y": 280,
+        "wires": [
+            [
+                "66226bd.fad9894"
+            ]
+        ]
+    },
+    {
+        "id": "66226bd.fad9894",
+        "type": "debug",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 730,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "29884d16.429a32",
+        "type": "mqtt in",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/relay4Status",
+        "qos": "2",
+        "broker": "a4ee4675.4df528",
+        "x": 490,
+        "y": 340,
+        "wires": [
+            [
+                "68bbb44f.26f08c"
+            ]
+        ]
+    },
+    {
+        "id": "68bbb44f.26f08c",
+        "type": "debug",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 730,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "de86e35f.76966",
+        "type": "mqtt in",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "topic": "myleo/heartbeat",
+        "qos": "2",
+        "broker": "a4ee4675.4df528",
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "16fe31c9.c7c6ce"
+            ]
+        ]
+    },
+    {
+        "id": "16fe31c9.c7c6ce",
+        "type": "debug",
+        "z": "f11341b1.b75c7",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 530,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "a4ee4675.4df528",
+        "type": "mqtt-broker",
+        "z": "",
+        "name": "TestMosquitto",
+        "broker": "tracker.my",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    }
+]
