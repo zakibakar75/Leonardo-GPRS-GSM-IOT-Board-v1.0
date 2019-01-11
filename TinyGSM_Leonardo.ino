@@ -67,7 +67,7 @@ const char user[] = "maxis";
 const char pass[] = "wap";
 
 // MQTT details
-const char* broker = "tracker.my";
+const char* broker = "broker_url_here";
 
 const char* topicInit = "myleo/init";
 
@@ -156,7 +156,7 @@ boolean mqttConnect() {
   //boolean status = mqtt.connect("myleo");
 
   // Or, if you want to authenticate MQTT:
-  boolean status = mqtt.connect("myleo", "zaki.bm@gmail.com", "88888888");
+  boolean status = mqtt.connect("myleo", "username", "password");
 
   if (status == false) {
     SerialMon.println(" fail");
