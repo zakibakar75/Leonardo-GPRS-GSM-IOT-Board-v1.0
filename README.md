@@ -6,5 +6,5 @@ The board is bought from Elecrow, as the link here : https://www.elecrow.com/leo
 This little neat board is very practical if you need to control things from remote using IOT way or traditional way (SMS).
 Since i am more towards IOT implementer, here's the code for Arduino as well as Node-Red flow.
 
-The library needed for this is the TinyGSM and PubSubClient
+The library needed for this is the TinyGSM and PubSubClient (library are included here)
 
